@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sandal"
+    tools:context=".CalculatorActivity">
+
+    <EditText
+        android:id="@+id/sub1"
+        android:layout_width="234dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/round_edge_border"
+        android:ems="10"
+        android:hint="Subject 1 Attendance %"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sub2"
+        android:layout_width="234dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_edge_border"
+        android:ems="10"
+        android:hint="Subject 2 Attendance %"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub1" />
+
+    <EditText
+        android:id="@+id/sub3"
+        android:layout_width="234dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_edge_border"
+        android:ems="10"
+        android:hint="Subject 3 Attendance %"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub2" />
+
+    <EditText
+        android:id="@+id/sub4"
+        android:layout_width="234dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_edge_border"
+        android:ems="10"
+        android:hint="Subject 4 Attendance %"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub3" />
+
+    <EditText
+        android:id="@+id/sub5"
+        android:layout_width="234dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_edge_border"
+        android:ems="10"
+        android:hint="Subject 5 Attendance %"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub4" />
+
+    <EditText
+        android:id="@+id/sub6"
+        android:layout_width="234dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_edge_border"
+        android:ems="10"
+        android:hint="Subject 6 Attendance %"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub5" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="234dp"
+        android:layout_height="53dp"
+        android:background="@drawable/round_edge_border"
+        android:padding="10dp"
+        android:text="Attendance %"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calbutton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/calbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calculate"
+        android:text="Calculate ⚙️"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub6"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App made by Sachin.M of II BCA 2022-2025 RKMV College"
+        android:textAlignment="center"
+        android:textColor="#AA4A44"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/keep1"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:text="Keep"
+        android:textSize="15sp"
+        app:icon="@drawable/baseline_task_alt_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/sub1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/keep2"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="Keep"
+        android:textSize="15sp"
+        app:icon="@drawable/baseline_task_alt_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/sub2"
+        app:layout_constraintTop_toBottomOf="@+id/keep1" />
+
+    <Button
+        android:id="@+id/keep3"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Keep"
+        android:textSize="15sp"
+        app:icon="@drawable/baseline_task_alt_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/sub3"
+        app:layout_constraintTop_toBottomOf="@+id/keep2" />
+
+    <Button
+        android:id="@+id/keep4"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Keep"
+        android:textSize="15sp"
+        app:icon="@drawable/baseline_task_alt_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/sub4"
+        app:layout_constraintTop_toBottomOf="@+id/keep3" />
+
+    <Button
+        android:id="@+id/keep5"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Keep"
+        android:textSize="15sp"
+        app:icon="@drawable/baseline_task_alt_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/sub5"
+        app:layout_constraintTop_toBottomOf="@+id/keep4" />
+
+    <Button
+        android:id="@+id/keep6"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Keep"
+        android:textSize="15sp"
+        app:icon="@drawable/baseline_task_alt_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/sub6"
+        app:layout_constraintTop_toBottomOf="@+id/keep5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
